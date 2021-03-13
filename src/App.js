@@ -1,5 +1,10 @@
+import AboutUs from "./pages/AboutUs";
 function App() {
-  return <h1>TEST</h1>;
+  return (
+    <div className="App">
+      <AboutUs />
+    </div>
+  );
 }
 
 export default App;
