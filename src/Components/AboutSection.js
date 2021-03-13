@@ -1,30 +1,35 @@
 import home1 from "../img/home1.png";
-
+import styled from "styled-components";
+import { About, Description, Image, Hide } from "../styles";
 const AboutSection = () => {
   return (
-    <div>
-      <div className="description">
-        <div className="title">
-          <div className="hide">
+    <About>
+      <Description>
+        <div className='title'>
+          <Hide>
             <h2>We work to make</h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide>
             <h2>
               your <span>dreams</span> come
             </h2>
-          </div>
-          <div className="hide">
+          </Hide>
+          <Hide>
             <h2>true. </h2>
-          </div>
+          </Hide>
         </div>
         <p>
-          Contact us for any photography ideas that you have. We don't care !
+          Contact us for any photography ideas that you have. We Have
+          professionals with amizing skills !
         </p>
-      </div>
-      <div className="image">
-        <img src={home1} alt="cameraMan" />
-      </div>
-    </div>
+        <button>Contact us</button>
+      </Description>
+      <Image>
+        <img src={home1} alt='cameraMan' />
+      </Image>
+    </About>
   );
 };
+//styled Components
+
 export default AboutSection;
