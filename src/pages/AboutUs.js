@@ -1,13 +1,23 @@
 import AboutSection from "../Components/AboutSection";
 import ServecesSection from "../Components/ServecesSection";
 import FaqSection from "../Components/FaqSection";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
+import ScrollTop from "../Components/ScrollTop";
+
 const AboutUs = () => {
   return (
-    <div>
+    <motion.div
+      variants={pageAnimation}
+      initial='hidden'
+      animate='show'
+      exit='exit'
+    >
       <AboutSection />
       <ServecesSection />
       <FaqSection />
-    </div>
+      <ScrollTop />
+    </motion.div>
   );
 };
 export default AboutUs;
